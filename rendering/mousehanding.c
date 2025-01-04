@@ -6,7 +6,7 @@
 /*   By: dyao <dyao@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 18:47:06 by dyao              #+#    #+#             */
-/*   Updated: 2025/01/04 14:22:39 by dyao             ###   ########.fr       */
+/*   Updated: 2025/01/04 14:44:34 by dyao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 int	mouse_press(int button, t_data *data)
 {
 	if (button == 1)
-		drawgun(data, 1);
+		data->fire = 1;
 	return (0);
 }
 
 int	mouse_release(int button, t_data *data)
 {
 	if (button == 1)
-		drawgun(data, 0);
+		data->fire = 0;
 	return (0);
 }
 

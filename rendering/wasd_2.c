@@ -6,7 +6,7 @@
 /*   By: dyao <dyao@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 14:12:22 by dyao              #+#    #+#             */
-/*   Updated: 2025/01/04 14:22:51 by dyao             ###   ########.fr       */
+/*   Updated: 2025/01/04 14:44:59 by dyao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ int	move(t_data *data)
 		data->a = fmod(data->a - 5.0 + 360.0, 360.0);
 	if (data->clearadd == true)
 	{
-		if (data->clear < 5)
+		if (data->clear < 11)
 			data->clear++;
 	}
 	if (data->clearmin == true)
@@ -102,4 +102,5 @@ void	base_init3(t_data *data)
 	data->look_left = 0;
 	data->clearadd = 0;
 	data->clearmin = 0;
+	data->fire = 0;
 }
